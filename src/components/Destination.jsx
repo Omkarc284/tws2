@@ -48,7 +48,7 @@ function Atmosphere () {
         side: THREE.BackSide
       })
     );
-    atmosphere.scale.set(1.1,1.1,1.1);
+    atmosphere.scale.set(1.2,1.2,1.2);
     scene.add(planet);
     scene.add(atmosphere);
     
@@ -76,10 +76,10 @@ const Destination = () => {
             </div>
             <div className="Dest-info" style={{position: 'relative', width:'40vw', fontSize: '1.5vw'}}>
                 <div>
-                    <h2 style={{color: 'lightgreen'}}>Destination awaits!</h2>
-                <h2 style={{color: 'lightgreen'}}>Welcome to the wasted paradise,</h2>
-                <h2 style={{color: 'lightgreen'}}>The Galvan.</h2>
-                <div><span style={{color:'magenta'}}><b>Galvan</b></span>, as on Earth, we call it <b>Kepler-452b</b>, the first approximately Earth-sized planet to be found in a Sun-like star's habitable zone. A potential planet where the E.Ts live as per the data gathered by Earth based on the received transmission from this system.</div>
+                    <h2 style={{color: 'magenta'}}>Destination awaits!</h2>
+                <h2 style={{color: 'magenta'}}>Welcome to the wasted paradise,</h2>
+                <h2 style={{color: 'magenta'}}>The Galvan.</h2>
+                <div><span style={{color:'red'}}><b>Galvan</b></span>, as on Earth, we call it <b>Kepler-452b</b>, the first approximately Earth-sized planet to be found in a Sun-like star's habitable zone. A potential planet where the E.Ts live as per the data gathered by Earth based on the received transmission from this system.</div>
                 </div>
                 
             </div>
