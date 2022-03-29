@@ -15,7 +15,7 @@ function Stamp () {
 const About = () => {
     return(
         <div className="about" id="1">
-            <div style={{position: 'relative', width: '50vw'}}>
+            <div className="canva" style={{position: 'relative', width: '50vw'}}>
                 <Canvas>
                     <Suspense fallback={null}>
                     <OrbitControls enableZoom={false}/>

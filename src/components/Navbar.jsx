@@ -16,8 +16,9 @@ const Navbar = (props) => {
     }
     return (
         <nav>
+            <link href='Home.css' rel='stylesheet' type='text/css' />
             <div className="logo">
-                <Link className="navbar-brand" to="0" onClick={() => props.setState(0)} spy={true} smooth={true} duration={1000}><img src="joint.png"/><h4>TWS</h4></Link>
+                <Link className="navbar-brand glitch" to="0" style={{fontSize: '2.4vmax', left: '90px'}} onClick={() => props.setState(0)} spy={true} smooth={true} duration={1000}><img src="joint.png"/><h4>TWS</h4></Link>
             </div>
             <ul className="navlinks">
                 <li className="link"><Link className="nav-link" activeClass="active-route" onSetActive={()=> {props.setState(0)}} to="0" spy={true} smooth={true} duration={1000}>Wasted Stamps</Link></li>

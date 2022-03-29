@@ -21,12 +21,14 @@ const OGs = () => {
                     The <span style={{color: 'red'}}><b>WASTED STAMPS</b></span> NFT holders will be the OGs of <span style={{color:"red"}}><b>THE WASTED CLUB</b></span>, an upcoming E.T. race NFTs in the Metaverse. The OGs are the front runners in making the first ever contact with E.T. race and their tech.
                     The OG | <span style={{color:"red"}}><b>THE WASTED CLUB</b></span> is unique, limited and worthy as the role helps you to be the in the community and make ample amount of assets and cash just as any other OG does but better. This role is permanent till the end.
                     The OGs will get rewarded as the ION reaches its Destination!
+                    
                 </div>
 
-                <h3 style={{color:'red'}}>Become an OG now!</h3>
-                <div>Join our Discord Community and follow us for updates.</div>
+                <h3 style={{position: 'relative', color:'red', top: '15px'}}>Become an OG now!</h3>
+                <div>Join our Discord Community and follow us for updates <a style={{position: 'relative', top: '15px', left:'10px'}} href="https://discord.com"><img style={{width: "48px", height: '48px'}} src="discord.png"/></a></div>
+                
             </div>
-            <div style={{position: 'relative', width: '50vw'}}>
+            <div className="canva" style={{position: 'relative', width: '50vw'}}>
                 <Canvas>
                     <Suspense fallback={null}>
                     <OrbitControls enableZoom={false}/>
