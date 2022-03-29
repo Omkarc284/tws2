@@ -7,38 +7,22 @@ import atmosphereFragmentShader from '../shaders/atmosphereFragment.glsl'
 import vertexShader from '../shaders/vertex.glsl';
 import fragmentShader from '../shaders/fragment.glsl';
 
-// function Planet() {
-//     const pref = useRef();
-//     useFrame(()=> (pref.current.rotation.y += 0.0002))
-//     const planet = useGLTF("/models/Planet.glb");
-//     return (
-//       <mesh ref={pref} position={[0,0,0]} scale={[3,3,3]}>
-//         <primitive object={planet.scene} dispose={null}/>
-//       </mesh>
-//     )
+function Planet() {
+    const pref = useRef();
+    useFrame(()=> (pref.current.rotation.y += 0.0002))
+    const planet = useGLTF('/models/Planet.glb');
+    return (
+      <mesh ref={pref} position={[0,0,0]} scale={[0.06,0.06,0.06]}>
+        <primitive object={planet.scene} dispose={null}/>
+      </mesh>
+    )
   
-// }
+}
 function Atmosphere () {
     const aref = useRef();
     useFrame(()=> (aref.current.rotation.y += 0.0002))
     var scene = new THREE.Scene();
-    const moonTexture = new THREE.TextureLoader().load('/models/semifinalmap.jpg');
 
-    const planet = new THREE.Mesh(
-    new THREE.SphereGeometry(40,200,200),
-    new THREE.ShaderMaterial({
-        vertexShader,
-        fragmentShader,
-        uniforms: {
-            globeTexture: {
-                value: moonTexture
-            }
-        }
-    }),
-    new THREE.MeshBasicMaterial({
-        map: moonTexture
-    })
-    );
     const atmosphere = new THREE.Mesh(
       new THREE.SphereGeometry(40,200,200),
       new THREE.ShaderMaterial({
@@ -48,16 +32,15 @@ function Atmosphere () {
         side: THREE.BackSide
       })
     );
-    atmosphere.scale.set(1.2,1.2,1.2);
-    scene.add(planet);
+    atmosphere.scale.set(1.05,1.05,1.05);
     scene.add(atmosphere);
     
     return (
-      <mesh ref={aref} position={[0, 0, 0]} scale={[0.06,0.06,0.06]}>
+      <mesh ref={aref} position={[0, 0, 0]} scale={[0.065,0.065,0.065]}>
         <primitive object={scene} dispose={null}/>
       </mesh>
     )
-  }
+}
 const Destination = () => {
     return(
         <div className="Dest" id="4">
@@ -68,7 +51,7 @@ const Destination = () => {
                     <Suspense fallback={null}>
                     <OrbitControls enableZoom={false}/>
                     
-                        {/* <Planet/> */}
+                        <Planet/>
                     <Atmosphere/>
                     </Suspense>
                     
