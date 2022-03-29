@@ -4,8 +4,6 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { useGLTF, OrbitControls} from "@react-three/drei";
 import atmosphereVertexShader from '../shaders/atmosphereVertex.glsl'
 import atmosphereFragmentShader from '../shaders/atmosphereFragment.glsl'
-import vertexShader from '../shaders/vertex.glsl';
-import fragmentShader from '../shaders/fragment.glsl';
 
 function Planet() {
     const pref = useRef();
