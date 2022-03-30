@@ -1,13 +1,13 @@
 body {
     background: transparent;
     font-family: "Oswald", sans-serif;
-    font-style: italic;
 }
 .container {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 40%;
     left: 50%;
+    font-style: italic;
 }
 .glitch, .glow {
     display:flex;

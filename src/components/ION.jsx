@@ -16,7 +16,7 @@ const Ion = () => {
 const ION = () => {
     return(
         <div className="ION" id="3">
-            <div style={{zIndex:25, position: 'relative', width: '50vw'}}>
+            <div style={{ position: 'relative', width: '50vw'}}>
                 <Canvas>
                     <Suspense fallback={null}>
                     
@@ -27,11 +27,10 @@ const ION = () => {
                     
                 </Canvas>
             </div>
-            <div className="ION-info" style={{zIndex: 30,position: 'relative',  width: '40vw', fontSize: '1.5vw'}}>
-                <h2 style={{color: 'magenta'}}>Aboard the ION!</h2>
-                <div>A voyager spacecraft set out to explore the unknown universe with <span style={{color: 'red'}}>257</span> NFT holders awaiting to make the first contact with the E.T. races.</div>
-                <h3 style={{color:'red'}}>WARNING : </h3>
-                <div>Only the <span style={{color: 'red'}}><b>WASTED STAMPS</b></span> holders can aboard the <span style={{color: 'red'}}><b>ION</b></span>!</div>
+            <div className="ION-info" style={{position: 'relative',  width: '40vw', fontSize:'1.5vw'}}>
+                <h2 style={{fontSize: '2.5vw'}}>Aboard<span style={{color: 'magenta'}}> The ION</span></h2>
+                <div style={{position: 'relative',top: '20px', fontSize:'1.2vw'}}>A voyager spacecraft awaiting to launch with the <span style={{color: 'red'}}>OGs</span> and reach the destination. </div>
+                <div style={{position: 'relative',top:'20px', fontSize:'1.2vw'}}>ION will launch after the mint sale is complete.</div>
             </div>
             
         </div>

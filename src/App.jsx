@@ -19,7 +19,7 @@ const Socials = () =>{
     <div className='social-div'>
       <ul className='social-ul'>
         <div style={{color: 'white', textAlign:'left', fontSize: '1vw'}}>Follow us:</div>
-        <div className="social">
+        <div className="social" >
           <li><a href="https://instagram.com"><img src="instagram.png"/></a></li>
           <li><a href="https://twitter.com"><img src="twitter.png"/></a></li>
           <li><a href="https://discord.com"><img src="discord.png"/></a></li>

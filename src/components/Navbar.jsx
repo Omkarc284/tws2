@@ -26,7 +26,7 @@ const Navbar = (props) => {
                 <li className="link"><Link className="nav-link" activeClass="active-route" onSetActive={()=> {props.setState(2)}} to="2" spy={true} smooth={true} duration={1000}>OGs</Link></li>
                 <li className="link"><Link className="nav-link" activeClass="active-route" onSetActive={()=> {props.setState(3)}} to="3" spy={true} smooth={true} duration={1000}>ION</Link></li>
                 <li className="link"><Link className="nav-link" activeClass="active-route" onSetActive={()=> {props.setState(4)}} to="4" spy={true} smooth={true} duration={1000}>Destination</Link></li>
-            </ul>
+            </ul>     
             <div onClick={handleNavLinksToggle} className="hamburger-toggle">
                 <i className="fa-solid fa-bars"></i>
             </div>

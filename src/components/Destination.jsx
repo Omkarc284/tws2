@@ -34,7 +34,7 @@ function Atmosphere () {
     scene.add(atmosphere);
     
     return (
-      <mesh ref={aref} position={[0, 0, 0]} scale={[0.065,0.065,0.065]}>
+      <mesh receiveShadow ref={aref} position={[0, 0, 0]} scale={[0.065,0.065,0.065]}>
         <primitive object={scene} dispose={null}/>
       </mesh>
     )
@@ -55,7 +55,7 @@ const Destination = () => {
             <div className="canva" style={{position: 'relative', width: '50vw'}}>
                 <Canvas>
                     <pointLight position={[100, 100, 100]} intensity={1.3} />
-                    <pointLight position={[150, -100, 5]} intensity={1.3} />
+                    <pointLight position={[150, -100, 100]} intensity={1.3} />
                     <Suspense fallback={null}>
                     <OrbitControls enableZoom={false}/>
                     
